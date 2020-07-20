@@ -146,7 +146,7 @@ namespace BuildMode
 					case PacketTypes.PaintWall://0%
 						{
 							int count = 0;
-							int type = e.Msg.readBuffer[e.Index + 8];
+							int type = e.Msg.readBuffer[7];
 							Terraria.Item lastItem = null;
 							foreach (Item i in plr.inventory)
 							{
