@@ -94,9 +94,7 @@ namespace BuildMode
 					NetMessage.SendData((int)PacketTypes.WorldInfo, i);
 					if (plr.statLife < plr.statLifeMax && !plr.dead)
 					{
-                        tsplr.Heal(600); //It's basically godmode anyways
-						//tsplr.Heal(plr.statLifeMax - plr.statLife);
-						//plr.statLife = plr.statLifeMax;
+						tsplr.Heal(plr.statLifeMax2 - plr.statLife);
 					}
                     tsplr.SetBuff(1, Int16.MaxValue); //Obsidian Skin
                     tsplr.SetBuff(3, Int16.MaxValue); // Swiftness
